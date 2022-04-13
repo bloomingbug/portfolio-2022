@@ -30,3 +30,12 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+.tilt-parent {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.tilt-child {
+  transform: translateZ(20px);
+}
